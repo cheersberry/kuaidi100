@@ -128,7 +128,7 @@ def get_postid():
             content = f.readlines()
             f.close()
     except:
-        print("请先输入快递单号")
+        print("无已有快递单号,请先输入快递单号")
         add_postid()
         content = get_postid()
     return content
